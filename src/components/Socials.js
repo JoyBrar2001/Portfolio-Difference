@@ -1,7 +1,18 @@
 import React from 'react';
+import { ImFacebook, ImTwitter, ImPinterest, ImInstagram, ImYoutube } from 'react-icons/im';
 
 const Socials = () => {
-  return <div>Socials</div>;
+  return (
+    <div className='hidden lg:flex ml-24'>
+      <ul className='flex gap-x-4'>
+        <li><a href="/"><ImFacebook /></a></li>
+        <li><a href="/"><ImTwitter /></a></li>
+        <li><a href="/"><ImPinterest /></a></li>
+        <li><a href="/"><ImInstagram /></a></li>
+        <li><a href="/"><ImYoutube /></a></li>
+      </ul>
+    </div>
+  );
 };
 
 export default Socials;
